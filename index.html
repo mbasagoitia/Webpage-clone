@@ -6,11 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500&family=DM+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
     <!--This entire header will be visible only on mobile screen sizes (less than 1200px)!-->
     <header id="header-mobile">
-
+        <img src="./img/curology-logo.png" id="header-img"/>
+        <div class="header-icon">
+            <div class="container" style="position: relative; width: 20px; height: 20px; background: #FFFFFF;">
+                <div class="bar-1" style="height: 2px; width: 20px; top: 0px; position: absolute; background: rgb(51, 46, 84);"></div>
+                <div class="bar-2" style="height: 2px; width: 20px; top: 9px; position: absolute; background: rgb(51, 46, 84);"></div>
+                <div class="bar-3" style="height: 2px; width: 20px; bottom: -1px; position: absolute; background: rgb(51, 46, 84);"></div>
+                <div class="bar-4" style="width: 11px; height: 4px; left: 12px; position: absolute; background: #FFFFFF; bottom: -2px;"></div>
+              </div>
+        </div>
     </header>
+    <!--This entire header will be visible only on large screen sizes (larger than 1200px)!-->
+    <header id="header-desktop">
+        <img src="./img/curology-logo.png" id="header-img"/>
+        <nav id="navbar">
+            <ul>
+                <li>Products <span class="carrot">╲╱</span></li>
+                <li>Why Curology</li>
+                <li>Reviews</li>
+                <li>Skincare 101 <span class="carrot">╲╱</span></li>
+            </ul>
+        </nav>
+        <div class="login-wrapper">
+            <button id="login">Login</button>
+            <button id="start-trial">Start Trial</button>
+        </div>
+    </header>
+    <main>
+
+    </main>
 </body>
 </html>
