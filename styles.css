@@ -12,13 +12,21 @@ body {
     font-family: 'DM Sans', sans-serif;
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
+
 header, header button {
     text-transform: uppercase;
+    color: #332E54;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: bold;
 }
 
 #header-img {
+    margin-top: 2px;
     width: 10rem;
-    height: 2.3rem;
+    height: 2.29rem;
 }
 
 #header-mobile {
@@ -43,23 +51,37 @@ header, header button {
 
 #navbar ul {
     padding: 0;
+    padding-left: 45px;
     margin: 0;
     display: flex;
     justify-content: center;
 }
 
 #navbar li {
-    margin: 20px;
+    margin: 18px;
     list-style-type: none;
     font-size: 0.9rem;
-    font-weight: bold;
+    letter-spacing: 1.8px;
+}
+
+#login, #start-trial {
+    padding: 1.2rem;
+    width: 10rem;
+    height: 4.2rem;
+    border: 1px solid #332E54;
+    border-radius: 5px;
+    background: transparent;
+    font-size: 0.9rem;
     letter-spacing: 2px;
 }
 
-.carrot {
-    font-size: 0.5rem;
+#login {
+    border: none;
+}
+
+.fa-angle-down {
     position: relative;
-    top: -5px;
+    top: -3px;
 }
 
 main {
