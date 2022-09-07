@@ -90,8 +90,101 @@ main {
     width: 100%;
 }
 
+#main-content-wrapper {
+    padding: 24px 24px 0;
+}
+
 h1 {
     font-family: 'Alegreya', serif;
+    font-size: 3.95rem;
+    margin: 0 0 6px 0;
+    padding: 0;
+    line-height: 4.5rem;
+    letter-spacing: 0.5px;
+    color: #332E54;
+}
+
+h2 {
+    font-weight: normal;
+    font-size: 2rem;
+    color: #332E54;
+    line-height: 3.3rem;
+    margin: 15px 0 5px 0;
+    padding: 0;
+}
+
+#stats-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stats {
+    width: 32%;
+    color: #332E54;
+}
+
+.stats:nth-of-type(2) {
+    width: 45%;
+}
+
+.stats:nth-of-type(3) {
+    width: 40%;
+}
+
+.big-letters {
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 1rem;
+    margin: 30px 0 15px 0;
+}
+
+.small-letters {
+    font-size: 1.3rem;
+}
+
+#free-offer-btn {
+    margin: 10px 0 5px 0;
+    width: 100%;
+    padding: 25px 18px;
+    border: none;
+    border-radius: 5px;
+    background: #332E54;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    letter-spacing: 0.9px;
+    text-transform: uppercase;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.trial-text {
+    font-size: 1.1rem;
+    color: #534D6E;
+    text-align: center;
+}
+
+#main-bg-img {
+    width: 90vw;
+    position: relative;
+    top: 10px;
+    right: 25px;
+}
+
+#badge {
+    height: 9rem;
+    width: 9rem;
+    position: relative;
+    bottom: 31.5rem;
+    left: 25rem;
+}
+
+.results-text {
+    position: relative;
+    text-align: center;
+    bottom: 13rem;
+    font-size: 1.2rem;
+    color: #534D6E;
 }
 
 @media only screen and (min-width: 992px) {
