@@ -21,6 +21,7 @@ header, header button {
     color: #332E54;
     font-family: 'DM Sans', sans-serif;
     font-weight: bold;
+    background: #FFFFFF;
 }
 
 #header-img {
@@ -34,6 +35,8 @@ header, header button {
     padding: 2rem;
     justify-content: space-between;
     height: 62px;
+    position: sticky;
+    top: 0;
 }
 
 #header-desktop {
@@ -187,6 +190,34 @@ h2 {
     color: #534D6E;
 }
 
+@media only screen and (min-width: 768px) {
+    #main-content-wrapper {
+        display: flex;
+        padding: 48px 0 0 48px;
+        min-height: 100vh;
+        gap: 2rem;
+    }
+
+    #main-bg-img {
+        display: none;
+    }
+
+    #right-wrapper {
+        background-image: url(img/main-bg-img.webp);
+        background-position: cover;
+        background-repeat: no-repeat;
+        flex-basis: 70%;
+    }
+
+    #free-offer-btn {
+        width: 65%;
+    }
+
+    .trial-text {
+        text-align: left;
+    }
+}
+
 @media only screen and (min-width: 992px) {
     html {
         font-size: 12px;
@@ -200,5 +231,7 @@ h2 {
 
     #header-desktop {
         display: flex;
+        position: sticky;
+        top: 0;
     }
 }
