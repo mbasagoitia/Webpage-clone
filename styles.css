@@ -10,6 +10,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'DM Sans', sans-serif;
+    background: #332E54;
 }
 
 body::-webkit-scrollbar {
@@ -37,6 +38,7 @@ header, header button {
     height: 62px;
     position: sticky;
     top: 0;
+    z-index: 2;
 }
 
 #header-desktop {
@@ -181,6 +183,98 @@ h2 {
     bottom: 5rem;
     font-size: 1.2rem;
     color: #534D6E;
+}
+
+footer {
+    min-height: 100vh;
+    background: #332E54;
+    position: relative;
+    bottom: 3.5rem;
+    margin: 0;
+    padding: 0 2.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#footer-nav {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0;
+}
+
+#footer-list-1, #footer-list-2 {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+#footer-nav li {
+    list-style-type: none;
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin: 2.6rem;
+    padding-top: 0.5rem;
+}
+
+#footer-list-1 li {
+    margin-left: 0;
+}
+
+#footer-list-2 li {
+    opacity: 65%;
+}
+
+#hr-1, #hr-2 {
+    width: 100%;
+    color: #FFFFFF;
+    border: none;
+    border-top: 1px solid white;
+    opacity: 50%;
+}
+
+#badge-wrapper {
+    display: flex;
+}
+
+#badge-2 {
+    width: 90px;
+    height: 90px;
+    position: relative;
+    bottom: 2.1rem;
+    left: 1.7rem;
+}
+
+#hr-1 {
+    width: 70%;
+    position: relative;
+    left: 0;
+    margin: 2rem 0 0 0;
+}
+
+#hr-2 {
+    margin-top: 3rem;
+}
+
+#social-media p {
+    margin: -3rem 0 3rem 0;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+#social-media ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 75%;
+    justify-content: space-between;
+}
+
+.social-icons li {
+    list-style-type: none;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: white;
 }
 
 @media only screen and (min-width: 768px) {
