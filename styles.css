@@ -84,6 +84,12 @@ header, header button {
     border: none;
 }
 
+#start-trial:hover {
+    color: white;
+    background: #332E54;
+    transition: all ease-in-out 0.2s;
+}
+
 .fa-angle-down {
     position: relative;
     top: -3px;
@@ -186,6 +192,7 @@ h2 {
 }
 
 footer {
+    z-index: 0;
     min-height: 100vh;
     background: #332E54;
     position: relative;
@@ -277,6 +284,18 @@ footer {
     color: white;
 }
 
+#copyright p, #copyright a {
+    color: white;
+    font-size: 1.14rem;
+    line-height: 3rem;
+    opacity: 65%;
+}
+
+
+#copyright {
+    margin-top: 3rem;
+}
+
 @media only screen and (min-width: 768px) {
 
     body {
@@ -320,6 +339,68 @@ footer {
         text-align: center;
         bottom: 5rem;
         left: 8rem;
+    }
+
+    #hr-1, #hr-2 {
+        display: none;
+    }
+
+    #footer-nav {
+        justify-content: center;
+        padding: 8rem 8rem 0 8rem;
+    }
+
+    #badge-2 {
+        display: none;
+    }
+
+    #badge-2-2 {
+        display: inline !important;
+        height: 90px;
+        width: 90px;
+        margin-left: 6rem;
+        margin-top: 3.5rem;
+    }
+
+    #social-media {
+        margin: 0;
+        padding: 0;
+        margin-top: 6rem;
+        width: 50%;
+    }
+
+    #social-media ul {
+        width: 100%;
+        justify-content: center;
+    }
+
+    #social-media li {
+        margin: 2rem;
+    }
+
+    #social-media p {
+        text-align: center;
+    }
+
+    footer {
+        align-items: center;
+    }
+
+    #copyright {
+        width: 100%;
+        padding-left: 5rem;
+    }
+
+    #copyright br {
+        display: none;
+    }
+
+    #copyright p, #copyright a {
+        font-size: 1.4rem;
+    }
+
+    #copyright a {
+        margin-right: 1rem;
     }
 }
 
@@ -380,5 +461,10 @@ footer {
         display: flex;
         position: sticky;
         top: 0;
+    }
+
+    .results-text {
+        bottom: 0rem;
+        left: 2rem;
     }
 }
