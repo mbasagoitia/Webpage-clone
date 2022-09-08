@@ -98,8 +98,9 @@ main {
 }
 
 h1 {
-    font-family: 'Alegreya', serif;
-    font-size: 3.95rem;
+    font-family: 'DM Serif Text', serif;
+    font-size: 3.5rem;
+    font-weight: lighter;
     margin: 0 0 6px 0;
     padding: 0;
     line-height: 4.5rem;
@@ -174,23 +175,21 @@ h2 {
     right: 25px;
 }
 
-#badge {
-    height: 9rem;
-    width: 9rem;
-    position: relative;
-    bottom: 31.5rem;
-    left: 25rem;
-}
-
 .results-text {
     position: relative;
     text-align: center;
-    bottom: 13rem;
+    bottom: 5rem;
     font-size: 1.2rem;
     color: #534D6E;
 }
 
 @media only screen and (min-width: 768px) {
+
+    body {
+        min-height: 100vh;
+        width: 100vw;
+    }
+
     #main-content-wrapper {
         display: flex;
         padding: 48px 0 0 48px;
@@ -207,6 +206,11 @@ h2 {
         background-position: cover;
         background-repeat: no-repeat;
         flex-basis: 70%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        min-height: 100vh;
+
     }
 
     #free-offer-btn {
@@ -216,11 +220,60 @@ h2 {
     .trial-text {
         text-align: left;
     }
+
+    .results-text {
+        font-size: 1rem;
+        text-align: center;
+        bottom: 5rem;
+        left: 8rem;
+    }
 }
 
 @media only screen and (min-width: 992px) {
     html {
         font-size: 12px;
+    }
+
+    #main-content-wrapper {
+        padding-top: 8rem;
+        padding-left: 10rem;
+        
+    }
+
+    #right-wrapper {
+        padding: 10rem;
+    }
+
+    h1 {
+        font-size: 4.8rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    .big-letters {
+        font-size: 2.5rem;
+    }
+    
+    .small-letters {
+        font-size: 1.1rem;
+    }
+    
+    #free-offer-btn {
+        margin: 10px 0 5px 0;
+        width: 53%;
+        padding: 25px 18px;
+        font-size: 1rem;
+    }
+
+    .trial-text {
+        font-size: 1rem;
+    }
+
+    .results-text {
+        bottom: 1.5rem;
+        left: 2rem;
     }
 }
 
